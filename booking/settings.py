@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-getaneht-bookingsystemb-zxkajiv3nhr.ws.codeinstitute-ide.net','https://restaurant-booking-app-332799487776.herokuapp.com']
+ALLOWED_HOSTS = ['8000-getaneht-bookingsystemb-zxkajiv3nhr.ws.codeinstitute-ide.net','restaurant-booking-app-332799487776.herokuapp.com']
 
 # Application definition
 
