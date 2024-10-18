@@ -77,6 +77,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "booking.wsgi.application"
+
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Database
