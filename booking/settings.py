@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-from corsheaders.middleware import CorsMiddleware
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +24,7 @@ SECRET_KEY = "django-insecure-k$##t-%6uge!*#j7y^h=wr@jj)dfsd)=9%z69v8^5rz&area_)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-getaneht-bookingsystemb-ln7tky9hm33.ws.codeinstitute-ide.net','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-getaneht-bookingsystemb-ln7tky9hm33.ws.codeinstitute-ide.net','.heroku.com']
 
 # Application definition
 
@@ -45,13 +43,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-      
 ]
 
 ROOT_URLCONF = "booking.urls"
@@ -112,7 +109,7 @@ LANGUAGE_CODE = "en-us"
 TIME_ZONE = "UTC"
 
 USE_I18N = True
-CorsMiddleware
+
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
