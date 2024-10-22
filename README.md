@@ -62,7 +62,6 @@ The **Restaurant Booking System** is a Django application designed to manage tab
 ### Running the Application
 1. Apply migrations:
 
-
 * python manage.py migrate
 * Create a superuser :
 
